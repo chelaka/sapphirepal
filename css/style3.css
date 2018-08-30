@@ -1,0 +1,333 @@
+html{
+	font-size: 10px;
+}
+
+
+.main-body{
+	height: 100vh;
+	width:100%;
+	background-image: url('../images/assets/home-image.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.white-overlay{
+	position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   z-index: 10;
+}
+
+.social-icons ul{
+	padding-left:0px;
+}
+
+.social-icons ul li {
+    font-size: 1.8rem;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+input[type="checkbox"]:checked  ~ .fa-facebook-f{
+  color:white;
+}
+
+i.fab.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+i.fab.fa-instagram:hover {
+    color: #cd486b;
+}
+
+i.fab.fa-twitter:hover {
+    color: #55acee;
+}
+
+i.fab.fa-youtube:hover {
+    color: #ff0000;
+}
+
+.logo{
+    margin-bottom: 10px;
+}
+
+.logo-section{
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 1%;
+    left: 2%;
+}
+
+/* TOP BAR */
+.t-title {
+    text-align: center;
+}
+
+.t-title a{
+    font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+	font-size: 1.4rem;
+	padding: 0px 8px;
+}
+
+.container-fluid.top-bar {
+    padding: 15px 0px;
+}
+
+span.cart-count {
+    background-color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    color: #868686;
+    vertical-align: middle;
+    margin: 0px 7px;
+}
+
+/* CSS FOR MENU */
+
+input {
+  position: fixed;
+  opacity: 0;
+}
+
+label {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+label::before {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18, 67, 100, 0.6);
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger {
+  position: fixed;
+  top: 2em;
+  left: 2em;
+  z-index: 3;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger::before,
+label .burger .bar, label .burger::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 17%;
+  background: white;
+  content: '';
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger .bar {
+  top: 44%;
+}
+label .burger::before {
+  top: 0;
+  transform-origin: top left;
+}
+label .burger::after {
+  bottom: 0;
+  transform-origin: bottom left;
+}
+
+input:focus + label .burger,
+label:hover .burger {
+  opacity: .75;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translate3d(0, 0, 0);
+  /* material acceleration */
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/*change*/
+nav::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 25em;
+  background: #ff6089;
+  content: '';
+  /* transform: skewX(15deg) translateX(-100%); */
+  transform-origin: bottom left;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+@media (min-width: 40em) {
+  nav::before {
+    width: 40em;
+  }
+}
+nav a {
+  margin: .5em 0;
+  padding: .2em 2em;
+  font-size: 1.5rem;
+	display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transform: translateX(-100%);
+  transition: color .15s, transform .5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav a:nth-child(1) {
+  transition-delay: 0s, 100ms;
+}
+nav a:nth-child(2) {
+  transition-delay: 0s, 150ms;
+}
+nav a:nth-child(3) {
+  transition-delay: 0s, 200ms;
+}
+nav a:nth-child(4) {
+  transition-delay: 0s, 250ms;
+}
+nav a:nth-child(5) {
+  transition-delay: 0s, 300ms;
+}
+nav a:nth-child(6) {
+  transition-delay: 0s, 350ms;
+}
+nav a:nth-child(7) {
+  transition-delay: 0s, 400ms;
+}
+nav a:hover, nav a:focus {
+  color: black;
+}
+
+nav a:hover{
+	transform: translate(0px, -5px) !important;
+  transition: transform .25s ease-in-out;
+	text-decoration: none;
+}
+
+main {
+  overflow: hidden;
+}
+main .content {
+  transform: translate3d(0, 0, 0);
+  /* material acceleration */
+  will-change: transform, filter;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+[id="navcheck"]:checked + label::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+[id="navcheck"]:checked + label .burger::before, [id="navcheck"]:checked + label .burger::after {
+  width: 141.42%;
+}
+[id="navcheck"]:checked + label .burger::before {
+  transform: rotate(45deg) translateY(-50%);
+}
+[id="navcheck"]:checked + label .burger::after {
+  transform: rotate(-45deg) translateY(50%);
+}
+[id="navcheck"]:checked + label .burger .bar {
+  transform: scale(0.1);
+}
+[id="navcheck"]:checked ~ nav {
+  transform: translateX(0);
+}
+/*change*/
+[id="navcheck"]:checked ~ nav::before {
+  transform: skewX(15deg) translateX(0);
+}
+[id="navcheck"]:checked ~ nav a {
+  transform: translateX(0);
+}
+[id="navcheck"]:checked ~ main .content {
+  transform: translateX(3em);
+  transform-origin: left center;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  /* quite laggy :S */
+}
+
+/* helper */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* misc */
+body {
+  overflow-x: hidden;
+  background: #444;
+  color: white;
+  font: 1em/1.4 "lato";
+}
+
+main {
+  background: #3498db;
+  padding: 5% 0;
+}
+
+article {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+@media (min-width: 60em) {
+  article {
+    width: 50%;
+  }
+}
+
+h1 {
+  font: 2.5em/1.4 "roboto condensed";
+  font-weight: 700;
+}
