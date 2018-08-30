@@ -268,9 +268,11 @@ main .content {
 }
 [id="navcheck"]:checked + label .burger::before {
   transform: rotate(45deg) translateY(-50%);
+	background: #ff7b7b;
 }
 [id="navcheck"]:checked + label .burger::after {
   transform: rotate(-45deg) translateY(50%);
+	background: #ff7b7b;
 }
 [id="navcheck"]:checked + label .burger .bar {
   transform: scale(0.1);
