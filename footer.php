@@ -8,16 +8,38 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/customjs.js"></script>
+<script src="js/slick.min.js"></script>
 <script>
 $( document ).ready(function() {
   $('#flat-slider').slider({
-     orientation: 'horizontal',
-     range:       true,
-     values:      [1000,9000],
-     max: 10000,
-     min: 0,
-     animate: "fast"
-   });
+    orientation: 'horizontal',
+    range:       true,
+    values:      [1000,9000],
+    max: 10000,
+    min: 0,
+    animate: "fast"
+  });
+
+  $('.slideshow').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slideshow',
+    arrows: true,
+    dots: true,
+    centerMode: true,
+    centerPadding: '40px',
+    nextArrow: '<i class="fa fa-arrow-right"></i>',
+    prevArrow: '<i class="fa fa-arrow-left"></i>',
+    focusOnSelect: true
+  });
 });
 </script>
 

@@ -104,7 +104,7 @@ span.cart-count {
 
 /* CSS FOR MENU */
 
-input {
+#navcheck {
 	position: fixed;
 	opacity: 0;
 }
@@ -313,7 +313,7 @@ main .content {
 body {
 	overflow-x: hidden;
 	/* background: #444; */
-	color:#2a2a2a;
+	color: #2b2b2b;
 	font: 1em "lato";
 }
 
