@@ -25,23 +25,31 @@ $( document ).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
     asNavFor: '.slider-nav'
   });
 
   $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slideshow',
-    arrows: true,
-    dots: true,
-    centerMode: true,
+    vertical: true,
+    verticalSwiping: true,
     centerPadding: '40px',
-    nextArrow: '<i class="fa fa-arrow-right"></i>',
-    prevArrow: '<i class="fa fa-arrow-left"></i>',
+    // nextArrow: '<i class="fa fa-arrow-right"></i>',
+    // prevArrow: '<i class="fa fa-arrow-left"></i>',
     focusOnSelect: true
   });
 });
 </script>
-
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
 </body>
 </html>
