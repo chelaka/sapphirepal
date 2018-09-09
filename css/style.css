@@ -420,3 +420,77 @@ h1 {
 	box-shadow: -2px 12px 13px -7px rgba(0,0,0,0.1);
 	background-color: white;
 }
+
+.pre-footer {
+	color: #8a8a8a;
+	background-color: #f3f3f3;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+}
+.row.pre-footer-row {
+	padding: 35px 0;
+}
+.foot-header {
+	color: #e13b3f;
+	font-size: 1.2rem;
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 20px;
+}
+
+.about-list li {
+	padding-bottom: 15px;
+}
+
+.about-list li a{
+	text-decoration: none;
+	cursor: pointer;
+	list-style: square;
+	color: inherit;
+}
+
+.contact i, .our-shops i{
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+.contact p, .our-shops p{
+	display: inline-block;
+}
+
+.contact-block {
+	margin-bottom: 10px;
+}
+
+.pink-btn{
+	background-color: #e13b3f;
+	color:white;
+}
+.footer-row{
+	padding: 10px 0;
+}
+.footer-logo img {
+	max-width: 115px;
+	padding: 10px 0px;
+}
+.footer-social span {
+	font-size: 1.8rem;
+	padding: 20px 10px;
+	/* margin-top: 10px; */
+	vertical-align: middle;
+	display: inline-block;
+	color: #9f9f9f;
+}
+.footer-cards img {
+	padding: 20px 0px;
+}
+
+.footer-id{
+	text-align: right;
+	color: #8a8a8a;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	padding: 29px 0px;
+	font-size: 1rem;
+}
