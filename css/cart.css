@@ -1,0 +1,39 @@
+body{
+  font-family: "Roboto", sans-serif;;
+  font-size: 1rem;
+  color: #515151;
+}
+
+.cart-section.row {
+    padding: 55px 0px 63px;
+}
+
+.cart-header {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e13b3f;
+    padding: 11px;
+}
+
+.cart-products {
+    margin-top: 18px;
+}
+.cart-product {
+    padding: 10px 0px;
+    border-bottom: 1px solid #ededed;
+}
+
+.cart-prod, .cart-qnty, .cart-price{
+    padding: 30px 0px;
+}
+.cart-product-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.remove-cart {
+    background: transparent;
+    border: none;
+    color: #e13b3f;
+}

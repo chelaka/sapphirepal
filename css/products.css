@@ -867,7 +867,7 @@ input.qtyplus { width:25px; height:25px;}
 input.qtyminus { width:25px; height:25px;}
 
 
-.buy-now [field=quantity] {
+.buy-now [field^=quantity] {
 	background-color: #979797;
 	border: none;
 	color: white;

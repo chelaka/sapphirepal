@@ -1,5 +1,5 @@
 <?php
-require ('header.php');
+require ('head.php');
 ?>
 <div class="main-body">
   <div class="container-fluid top-bar">

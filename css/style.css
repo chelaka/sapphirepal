@@ -494,3 +494,27 @@ h1 {
 	padding: 29px 0px;
 	font-size: 1rem;
 }
+
+.inner-top {
+    padding: 15px 0px;
+}
+
+.inner-top .t-title a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ef2222;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0px 8px;
+}
+
+.inner-top span.cart-count {
+    background-color: #ef2222;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px 7px;
+}
